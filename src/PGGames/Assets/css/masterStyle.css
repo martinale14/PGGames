@@ -1,0 +1,476 @@
+﻿@font-face {
+    font-family: 'swiz721-Bold';
+    src: url(/Assets/fonts/Swis721-Cn-BT-Bold_43187.ttf);
+}
+
+@font-face {
+    font-family: 'swiz721-roman';
+    src: url(/Assets/fonts/swis721_cn_bt_roman.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecera {
+    width: 100%;
+    height: 50px;
+    background-color: #34383d;
+}
+
+#ImageButtonLogo {
+    width: 90%;
+    height: 90%;
+}
+
+.ImageButtonMenu {
+    width: 50%;
+    height: 50%;
+}
+
+.carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.imgCarousel {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+    .imgCarousel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+.gDescriptions {
+    width: 250px;
+    float: left;
+}
+
+.row div {
+    padding-top: 10px;
+}
+
+.description {
+    font-family: swiz721-roman;
+    margin-left: 10px;
+}
+
+.ntcDescription {
+    font-family: swiz721-Bold;
+    float: left;
+    padding-right: 10px;
+}
+
+.verMas {
+    width: 50px;
+    height: 50px;
+    margin-top: -8px;
+}
+
+.lastGames {
+    background-color: #CCCCCC;
+    opacity: 1;
+    width: 90%;
+    height: 350px;
+}
+
+.gameItem {
+    background-color: aliceblue;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    height: 80px;
+}
+
+.imgContainer {
+    margin-top: -20px;
+}
+
+.gPrices {
+    text-align: center;
+    margin-left: 17px;
+    margin-top: auto;
+}
+
+.msgIndex {
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.4);
+    z-index: 1;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 25px;
+}
+
+.centrarNombre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.registro {
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: 25px;
+}
+
+.lblLogin {
+    color: #ffffff;
+}
+
+.lblLogin2 {
+    color: #d6322d;
+    padding-top: 10px;
+}
+
+.loginText {
+    color: #ffffff;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+}
+
+.conToCenter {
+    width: 100%;
+    text-align: center;
+}
+
+.objToCenter {
+    width: 90%;
+    display: inline-block;
+}
+
+.cardShadow {
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(215,50,45,.44);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(215,50,45,.44);
+    box-shadow: 0px 0px 20px 5px rgba(215,50,45,.44);
+    border: 1px solid rgb(255,0,13);
+}
+
+.txtBox {
+    width: 100%;
+    padding: 1vw;
+}
+
+.txtBox2 {
+    width: 100%;
+    padding: 1vw;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.body {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    padding: 0;
+    height: 100vh
+}
+
+.full {
+    min-height: 100%;
+}
+
+.aspNetHidden {
+    display: none;
+}
+
+.Juegos{
+    margin: 1vh;
+}
+
+.item-card {
+    background-color: #34383d;
+}
+
+.btn-card {
+    border-color: black;
+    background-color: rgba(1,1,1,0);
+    border-radius: 20px;
+    color: #191919;
+    font-weight: bold;
+}
+
+    .btn-card:hover {
+        background-color: black;
+        color: white;
+    }
+
+.item-card {
+    transition-duration: 150ms;
+    margin-right: 20px;
+    margin-top: 20px;
+    min-width: 203.25px;
+    max-width: 203.25px;
+    position: relative;
+}
+
+@media screen and (max-width:575px) {
+
+    .item-card {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+
+    .item-card:hover{
+    
+        transform: scale(1.05);
+        z-index: 1;
+    }
+
+.card-items-group{
+    padding: 0 10px;
+}
+
+.card-description {
+    transition-duration: 150ms;
+    z-index: 1;
+    background-color: rgba(256, 256, 256, 0.6);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+    .card-description:hover {
+        filter: alpha(opacity=50);
+        opacity: 1;
+    }
+
+.back-card {
+    z-index: 0;
+    width: 100%;
+    padding: 0;
+}
+
+
+
+
+
+.txtComprar {
+    
+}
+
+.btnGestion {
+    transition: all .4s;
+}
+
+    .btnGestion:hover {
+        background-color: rgba(214, 50, 45, 0.6)
+    }
+
+.lblGestion {
+    color: #ffffff;
+    margin: 0px 0px 0px 0px;
+}
+
+.menu-topBar {
+    color: #ffffff;
+}
+
+    .menu-topBar:hover {
+        color: #d6322d;
+    }
+
+#seguridad {
+    display: none;
+}
+
+.grid {
+    border: solid;
+}
+
+.btnJuegos {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+    .btnJuegos:focus {
+        background-color: rgba(215,50,45,.5) !important;
+        box-shadow: 0 0 0 .2rem rgba(215,50,45,.5) !important;
+        border-color: rgba(215,50,45,.5) !important;
+    }
+
+.box-search {
+    margin: 100px auto;
+    width: 300px;
+    height: 50px;
+}
+
+.container-search {
+    overflow: hidden;
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+    .container-search input#ContentPlaceHolder1_search {
+        width: 300px;
+        height: 50px;
+        background: #484848;
+        border: none;
+        font-size: 12pt;
+        float: left;
+        color: #fff;
+        padding-left: 15px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-transition: background .55s ease;
+        -moz-transition: background .55s ease;
+        -o-transition: background .55s ease;
+        transition: background .55s ease;
+    }
+
+        .container-search input#ContentPlaceHolder1_search::-webkit-input-placeholder {
+            color: #6c757d;
+        }
+
+        .container-search input#ContentPlaceHolder1_search:-moz-placeholder {
+            color: #6c757d;
+        }
+
+        .container-search input#ContentPlaceHolder1_search::-moz-placeholder {
+            color: #6c757d;
+        }
+
+        .container-search input#ContentPlaceHolder1_search:-ms-input-placeholder {
+            color: #6c757d;
+        }
+
+        .container-search input#ContentPlaceHolder1_search:focus {
+            color: #fff;
+            background-color: #484848;
+            border-color: #4e4e4e;
+            outline: 0;
+            box-shadow: 0 0 0 0rem rgba(255,255,255,.25);
+        }
+
+    .container-search button.icon {
+        -webkit-border-top-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        -moz-border-radius-bottomright: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: none;
+        background: #d7322d;
+        height: 50px;
+        width: 50px;
+        color: white;
+        opacity: 0;
+        font-size: 12pt;
+        -webkit-transition: all .55s ease-out;
+        -moz-transition: all .55s ease-out;
+        -o-transition: all .55s ease-out;
+        transition: all .55s ease-out;
+    }
+
+    .container-search:hover button.icon, .container-search:active button.icon, .container-search:focus button.icon {
+        outline: none;
+        opacity: 1;
+        margin-left: -50px;
+    }
+
+        .container-search:hover button.icon:hover {
+            background: #931f1b;
+        }
+
+.image-preview {
+    width: 40vw;
+    min-height: 50vh;
+    border: 2px solid #d7322d;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+}
+
+.image-preview__image {
+    display: none;
+    width: 100%;
+}
+
+
+.lblIndex {
+    font-family: swiz721-Bold;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+}
+
+.lblIndex2 {
+    font-family: swiz721-Bold;
+    color: rgba(255,255,255,.3);
+    font-size: 11pt;
+    text-align: left;
+}
+
+.btnIndex {
+    border: none;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    transition: .5s;
+    background-size: 200% auto;
+    color: white;
+    font-family: swiz721-Bold;
+    font-size: 26pt;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #000000 -20%, #d7322d 51%, #000000 120%);
+    border-radius: 25px;
+}
+
+    .btnIndex:hover {
+        background-position: right center;
+    }
+
+.imgTop {
+    width: 140.5px;
+    height: 193.5px;
+    margin-bottom: 2em;
+    margin-left: 20px;
+    transition: all .3s;
+}
+
+    .imgTop:hover {
+        transform: scale(1.1);
+    }
+
+.imgGratis {
+    width: 250px;
+    transition:all 1s;
+}
+
+    .imgGratis:hover{
+
+        transform:scale(1.05);
+
+    }
+
+.centrar{
+
+    text-align:center;
+
+}

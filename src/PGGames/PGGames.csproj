@@ -1,0 +1,241 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F665BE2-BD9E-476E-A6C9-DC7BF4CF6FEB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PGGames</RootNamespace>
+    <AssemblyName>PGGames</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44392</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\estilos.css" />
+    <Content Include="Assets\css\simple-sidebar.css" />
+    <Content Include="Assets\imgs\carrito.png" />
+    <Content Include="Assets\imgs\Catalogo\AssasinsCreed-Odyssey.jpg" />
+    <Content Include="Assets\imgs\Catalogo\AssasinsCreed-Origins.jpg" />
+    <Content Include="Assets\imgs\Catalogo\AssasinsCreed-Syndicate.jpg" />
+    <Content Include="Assets\imgs\Catalogo\AssasinsCreed-Valhalla.jpg" />
+    <Content Include="Assets\imgs\Catalogo\FarCry-5.jpg" />
+    <Content Include="Assets\imgs\Catalogo\FarCry-NewDawn.jpg" />
+    <Content Include="Assets\imgs\Catalogo\ForHonor.jpg" />
+    <Content Include="Assets\imgs\Catalogo\GhostRecon-Wildlands.jpg" />
+    <Content Include="Assets\imgs\Catalogo\Rainbowsix-Siege.jpg" />
+    <Content Include="Assets\imgs\Catalogo\TheCrew-2.jpg" />
+    <Content Include="Assets\imgs\Catalogo\TheDivision2.jpg" />
+    <Content Include="Assets\imgs\Catalogo\WatchDogs-2.jpg" />
+    <Content Include="Assets\imgs\index\game.ico" />
+    <Content Include="Assets\imgs\index\gratis.png" />
+    <Content Include="Assets\imgs\index\ps5Not.png" />
+    <Content Include="Assets\imgs\index\gameDes.jpg" />
+    <Content Include="Assets\imgs\Lupa.png" />
+    <Content Include="Assets\imgs\pacman.png" />
+    <Content Include="Assets\imgs\pg5.png" />
+    <Content Include="Assets\imgs\slide\assasinsBanner.jpg" />
+    <Content Include="Assets\imgs\slide\farcryBanner.jpg" />
+    <Content Include="Assets\imgs\slide\forzaBanner.jpg" />
+    <Content Include="Assets\imgs\logo.png" />
+    <Content Include="Assets\imgs\Nombre.png" />
+    <Content Include="Assets\imgs\tresLineas.png" />
+    <Content Include="Assets\imgs\verMas.png" />
+    <Content Include="Assets\libs\bootstrap-validate.js" />
+    <Content Include="Assets\libs\bootstrap.min.js" />
+    <Content Include="Assets\libs\jquery.min.js" />
+    <Content Include="Assets\libs\popper.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Js\alert.js" />
+    <Content Include="Js\gestionCuenta.js" />
+    <Content Include="Modulos\cambiar-con.aspx" />
+    <Content Include="Modulos\gestionCuenta.aspx" />
+    <Content Include="Modulos\index.aspx" />
+    <Content Include="Modulos\masters\principal.Master" />
+    <Content Include="Assets\fonts\swis721_cn_bt_roman.ttf" />
+    <Content Include="Assets\fonts\Swis721-Cn-BT-Bold_43187.ttf" />
+    <None Include="Properties\PublishProfiles\PGGames - Web Deploy.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\masterStyle.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Modulos\Login.aspx" />
+    <Content Include="Modulos\modificarJuego.aspx" />
+    <Content Include="Modulos\pagarCarrito.aspx" />
+    <Content Include="Modulos\registro.aspx" />
+    <Content Include="Modulos\catalogo.aspx" />
+    <Content Include="Modulos\administrarUsers.aspx" />
+    <Content Include="Modulos\verCompras.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\cambiar-con.aspx.cs">
+      <DependentUpon>cambiar-con.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\cambiar-con.aspx.designer.cs">
+      <DependentUpon>cambiar-con.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\gestionCuenta.aspx.cs">
+      <DependentUpon>gestionCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\gestionCuenta.aspx.designer.cs">
+      <DependentUpon>gestionCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\masters\principal.Master.cs">
+      <DependentUpon>principal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\masters\principal.Master.designer.cs">
+      <DependentUpon>principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\modificarJuego.aspx.cs">
+      <DependentUpon>modificarJuego.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\modificarJuego.aspx.designer.cs">
+      <DependentUpon>modificarJuego.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\pagarCarrito.aspx.cs">
+      <DependentUpon>pagarCarrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\pagarCarrito.aspx.designer.cs">
+      <DependentUpon>pagarCarrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\registro.aspx.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\registro.aspx.designer.cs">
+      <DependentUpon>registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\catalogo.aspx.cs">
+      <DependentUpon>catalogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\catalogo.aspx.designer.cs">
+      <DependentUpon>catalogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\administrarUsers.aspx.cs">
+      <DependentUpon>administrarUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\administrarUsers.aspx.designer.cs">
+      <DependentUpon>administrarUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\verCompras.aspx.cs">
+      <DependentUpon>verCompras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\verCompras.aspx.designer.cs">
+      <DependentUpon>verCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1261</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44392/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

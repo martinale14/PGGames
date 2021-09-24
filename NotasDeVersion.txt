@@ -1,0 +1,11 @@
+SQL-SERVER: Microsoft SQL Server 2019 (RTM) - 15.0.2000.5 (X64) 
+Framework: .Net Framework 4.0
+VisualStudio: Visual Studio Community 2019 Versión 16.6.0
+
+Terceros usados:
+HTML5
+CSS3
+Bootstrap4
+jQuery 3.5.1
+Popper 2.4.1
+bootstrap-Validate v2

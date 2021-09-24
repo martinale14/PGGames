@@ -1,0 +1,36 @@
+﻿@media screen and (max-width:767px) {
+    .main-card {
+        width: 100% !important;
+    }
+}
+
+.btn-registro:disabled{
+
+    background-color: red;
+    border: none;
+
+}
+
+.nav-bar {
+    background-color: #303030;
+}
+
+.cart {
+    border-radius: 200px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.lupa{
+    height: 42px;
+}
+
+.row{
+    margin: 0;
+}
+
+.subir{
+    color: white;
+}

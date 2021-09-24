@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="principal.master.cs" Inherits="PGGames.Modelos.principal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>PG GAMES</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="/Assets/imgs/index/game.ico" />
+    <link rel="stylesheet" href="/Assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Assets/css/masterStyle.css" />
+    <link rel="stylesheet" href="/Assets/css/estilos.css" />
+    <link rel="stylesheet" href="/Assets/css/simple-sidebar.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script src="/Assets/libs/popper.min.js"></script>
+    <script src="/Assets/libs/jquery.min.js"></script>
+    <script src="/Assets/libs/bootstrap.min.js"></script>
+    <script src="/Assets/libs/bootstrap-validate.js"></script>
+    <script type="text/javascript" src="../Js/alert.js"></script>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+
+
+
+            if (typeof (Storage) !== undefined) {
+                if (localStorage.getItem("estado") !== undefined) {
+                    console.log(localStorage.getItem("estado"));
+                    if (localStorage.getItem("estado") == "escondido") {
+
+                        $("#wrapper").addClass("toggled");
+
+
+                    } else {
+                        $("#sidebar-wrapper").removeClass("hide");
+                    }
+
+                }
+            }
+        }
+    </script>
+</head>
+<body style="height: 100vh; background-color: #303030">
+    <div id="alertbox" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="color: #fff">
+                    <p id="mensajePer" style="text-align: center;"></p>
+                </div>
+                <div class="modal-footer" style="margin: auto">
+                    <button type="button" class="btn btn-info btn-fill" id="btAceptar" data-dismiss="modal" formnovalidate="">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form id="form1" runat="server">
+        <div id="cabecera">
+            <table style="width: 100%; height: 100%;">
+                <tr>
+                    <td style="width: 50px">
+                        <div class="d-flex justify-content-center align-content-center">
+                            <asp:ImageButton CssClass="ImageButtonMenu" ID="menuToggle" runat="server" ImageUrl="~/Assets/imgs/tresLineas.png" formnovalidate="" />
+                        </div>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td style="width: 50px">
+                        <div class="d-flex justify-content-center align-con">
+                            <asp:ImageButton ID="ImageButtonLogo" runat="server" ImageUrl="~/Assets/imgs/pacman.png" OnClick="ImageButtonLogo_Click" formnovalidate="" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="d-flex" id="wrapper">
+
+            <!-- Sidebar -->
+            <div class="side-color animation hide" id="sidebar-wrapper" style="height:100%">
+                <div class="list-group list-group-flush">
+                    <a runat="server" id="login" href="/Modulos/login.aspx" class="list-group-item list-group-item-action side-color">Iniciar Sesión</a>
+                    <a runat="server" id="inicio" href="/Modulos/index.aspx" class="list-group-item list-group-item-action side-color">Inicio</a>                    
+                    <a runat="server" id="products" href="/Modulos/catalogo.aspx" class="list-group-item list-group-item-action side-color">Catálogo</a>
+                    <a runat="server" id="acount" href="/Modulos/gestionCuenta.aspx" class="list-group-item list-group-item-action side-color">Mi cuenta</a>
+                    <a runat="server" id="CompReal" href="/Modulos/verCompras.aspx" class="list-group-item list-group-item-action side-color">Compras Realizadas</a>
+                    <a runat="server" id="AdminUser" href="/Modulos/AdministrarUsers.aspx" class="list-group-item list-group-item-action side-color">Administrar Usuarios</a>
+                    <a runat="server" id="RegClient" href="/Modulos/Registro.aspx" class="list-group-item list-group-item-action side-color">Registrar Usuario</a>
+                    <a runat="server" id="moGame" href="/Modulos/modificarJuego.aspx" class="list-group-item list-group-item-action side-color">Administrar Juegos</a>
+                    <a runat="server" id="Close" href="#" class="list-group-item list-group-item-action side-color" onserverclick="CerrarSesion">Cerrar Sesión</a>
+                    <a></a>
+                </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper" style="background-color:#303030; height:100vh;">
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+
+    </form>
+    <script>
+
+
+        $("#menuToggle").click(function (e) {
+            $("#sidebar-wrapper").removeClass("hide");
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+            if (typeof (Storage) !== undefined) {
+
+                if ($("#wrapper").hasClass("toggled")) {
+
+                    localStorage.setItem("estado", "escondido");
+
+                } else {
+
+                    localStorage.setItem("estado", "mostrado");
+                }
+
+            } else {
+                console.log("error");
+            }
+        });
+
+    </script>
+</body>
+</html>
